@@ -10,6 +10,12 @@
 
     <!--Description-->
     
+        <meta name="description" content="Carthage学习笔记(一)一、introduce　Carthage也是一个比较好用的三方框架管理工具,原理是自动帮你把工程编译为Dynamic framework(动态库),仅支持iOS8以上。
+　
+二、installHomeBrew安装法
+$brew update （升级到最新版的brew）
+">
+    
 
     <!--Author-->
     
@@ -140,7 +146,7 @@
             
                 <span class="date">2016-12-29</span>
             
-            <a href="#disqus_thread" class="comments">Kommentare</a>
+            <a href="#disqus_thread" class="comments">Comments</a>
             
         </div>
     </div>
@@ -151,7 +157,20 @@
         
 
         <!-- Post Content -->
-        
+        <h1 id="Carthage学习笔记-一"><a href="#Carthage学习笔记-一" class="headerlink" title="Carthage学习笔记(一)"></a>Carthage学习笔记(一)</h1><h2 id="一、introduce"><a href="#一、introduce" class="headerlink" title="一、introduce"></a>一、introduce</h2><p>　Carthage也是一个比较好用的三方框架管理工具,原理是自动帮你把工程编译为Dynamic framework(动态库),仅支持iOS8以上。
+　</p>
+<h2 id="二、install"><a href="#二、install" class="headerlink" title="二、install"></a>二、install</h2><h6 id="HomeBrew安装法"><a href="#HomeBrew安装法" class="headerlink" title="HomeBrew安装法"></a>HomeBrew安装法</h6><ol>
+<li>$brew update （升级到最新版的brew）</li>
+<li>$brew install carthage （安装carthage）</li>
+</ol>
+<h2 id="三、use"><a href="#三、use" class="headerlink" title="三、use"></a>三、use</h2><ol>
+<li>在项目文件夹下创建一个cartfile的文件（项目名：CarthageDemo）</li>
+<li>在cartfile里添加需要使用的第三方库名，例如：github “AFNetworking/AFNetworking”(afnetworking的最新版本)，cartfile的其他限制</li>
+<li>cd 到CarthageDemo项目文件夹下 $ carthage update,成功后会生成Cartfile.resolved 和Carthage文件夹，cartfile 和cartfile.resolved需要提交到git，Carthage文件夹不需要提交，在ignore里添加Carthage/</li>
+</ol>
+<p><strong>注：在Carthage update的时候要翻墙，不然可能失败（RPC failed; curl 56 SSLRead() return error -9806），翻墙之后多试几次，也可以尝试其他解决办法。</strong></p>
+<h2 id="四、add-framework"><a href="#四、add-framework" class="headerlink" title="四、add framework"></a>四、add framework</h2><p>在项目Target中的build Setting的framework search path中添加AFNetworking.framework的路径：$(SRCROOT)/Carthage/Build/iOS</p>
+
     </div>
 
     
@@ -185,10 +204,6 @@
     <div class="col-xs-6 col-sm-6 col-md-3 col-lg-3 recent-posts">
         <h2>Recent Posts</h2>
         <ul>
-            
-            <li>
-                <a class="footer-post" href="/2016/12/29/Carthage学习笔记一/">Carthage学习笔记(一)</a>
-            </li>
             
             <li>
                 <a class="footer-post" href="/2016/12/29/Carthage学习笔记/">Carthage学习笔记</a>
