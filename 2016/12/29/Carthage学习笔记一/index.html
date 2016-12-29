@@ -10,6 +10,12 @@
 
     <!--Description-->
     
+        <meta name="description" content="Carthage学习笔记(一)一、introduce　Carthage也是一个比较好用的三方框架管理工具,原理是自动帮你把工程编译为Dynamic framework(动态库),仅支持iOS8以上。
+　
+二、installHomeBrew安装法
+$brew update （升级到最新版的brew）
+">
+    
 
     <!--Author-->
     
@@ -18,7 +24,7 @@
 
     <!--Open Graph Title-->
     
-        <meta property="og:title" content="Ada の Blog"/>
+        <meta property="og:title" content="Carthage学习笔记(一)"/>
     
 
     <!--Open Graph Description-->
@@ -29,7 +35,7 @@
 
     <!--Type page-->
     
-        <meta property="og:type" content="website" />
+        <meta property="og:type" content="article" />
     
 
     <!--Page Cover-->
@@ -40,7 +46,7 @@
 
     <!-- Title -->
     
-    <title>Ada の Blog</title>
+    <title>Carthage学习笔记(一) - Ada の Blog</title>
 
     <!-- Bootstrap Core CSS -->
     <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.2/css/bootstrap.min.css" integrity="sha384-y3tfxAZXuh4HwSYylfB+J125MxIs6mR5FOHamPBG064zB+AFeWH94NdvaCBm8qnd" crossorigin="anonymous">
@@ -123,17 +129,14 @@
     <div class="logo">
         <a href="/"><i class="logo-icon fa fa-cube" aria-hidden="true"></i></a>
         
-            <h1 id="main-title" class="title">Ada の Blog</h1>
-        
     </div>
 </header>
 
         <section class="main">
             
-                
 <div class="post">
 
-    <div class="post-header index">
+    <div class="post-header">
         <h1 class="title">
             <a href="/2016/12/29/Carthage学习笔记一/">
                 Carthage学习笔记(一)
@@ -143,14 +146,18 @@
             
                 <span class="date">2016-12-29</span>
             
-            
+            <a href="#disqus_thread" class="comments">Kommentare</a>
             
         </div>
     </div>
 
-    
-        <div class="content">
-            <h1 id="Carthage学习笔记-一"><a href="#Carthage学习笔记-一" class="headerlink" title="Carthage学习笔记(一)"></a>Carthage学习笔记(一)</h1><h2 id="一、introduce"><a href="#一、introduce" class="headerlink" title="一、introduce"></a>一、introduce</h2><p>　Carthage也是一个比较好用的三方框架管理工具,原理是自动帮你把工程编译为Dynamic framework(动态库),仅支持iOS8以上。
+    <div class="content">
+
+        <!-- Gallery -->
+        
+
+        <!-- Post Content -->
+        <h1 id="Carthage学习笔记-一"><a href="#Carthage学习笔记-一" class="headerlink" title="Carthage学习笔记(一)"></a>Carthage学习笔记(一)</h1><h2 id="一、introduce"><a href="#一、introduce" class="headerlink" title="一、introduce"></a>一、introduce</h2><p>　Carthage也是一个比较好用的三方框架管理工具,原理是自动帮你把工程编译为Dynamic framework(动态库),仅支持iOS8以上。
 　</p>
 <h2 id="二、install"><a href="#二、install" class="headerlink" title="二、install"></a>二、install</h2><h6 id="HomeBrew安装法"><a href="#HomeBrew安装法" class="headerlink" title="HomeBrew安装法"></a>HomeBrew安装法</h6><ol>
 <li>$brew update （升级到最新版的brew）</li>
@@ -164,80 +171,20 @@
 <p><strong>注：在Carthage update的时候要翻墙，不然可能失败（RPC failed; curl 56 SSLRead() return error -9806），翻墙之后多试几次，也可以尝试其他解决办法。</strong></p>
 <h2 id="四、add-framework"><a href="#四、add-framework" class="headerlink" title="四、add framework"></a>四、add framework</h2><p>在项目Target中的build Setting的framework search path中添加AFNetworking.framework的路径：$(SRCROOT)/Carthage/Build/iOS</p>
 
-        </div>
-    
-
-</div>
-            
-                
-<div class="post">
-
-    <div class="post-header index">
-        <h1 class="title">
-            <a href="/2016/12/29/Carthage学习笔记/">
-                Carthage学习笔记
-            </a>
-        </h1>
-        <div class="post-info">
-            
-                <span class="date">2016-12-29</span>
-            
-            
-            
-        </div>
     </div>
 
     
-        <div class="content">
-            
-        </div>
+
+    
+
+    <!-- Comments -->
     
 
 </div>
-            
-                
-<div class="post">
-
-    <div class="post-header index">
-        <h1 class="title">
-            <a href="/2016/12/29/hello-world/">
-                Hello World
-            </a>
-        </h1>
-        <div class="post-info">
-            
-                <span class="date">2016-12-29</span>
-            
-            
-            
-        </div>
-    </div>
-
-    
-        <div class="content">
-            <p>Welcome to <a href="https://hexo.io/" target="_blank" rel="external">Hexo</a>! This is your very first post. Check <a href="https://hexo.io/docs/" target="_blank" rel="external">documentation</a> for more info. If you get any problems when using Hexo, you can find the answer in <a href="https://hexo.io/docs/troubleshooting.html" target="_blank" rel="external">troubleshooting</a> or you can ask me on <a href="https://github.com/hexojs/hexo/issues" target="_blank" rel="external">GitHub</a>.</p>
-<h2 id="Quick-Start"><a href="#Quick-Start" class="headerlink" title="Quick Start"></a>Quick Start</h2><h3 id="Create-a-new-post"><a href="#Create-a-new-post" class="headerlink" title="Create a new post"></a>Create a new post</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">$ hexo new <span class="string">"My New Post"</span></div></pre></td></tr></table></figure>
-<p>More info: <a href="https://hexo.io/docs/writing.html" target="_blank" rel="external">Writing</a></p>
-<h3 id="Run-server"><a href="#Run-server" class="headerlink" title="Run server"></a>Run server</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">$ hexo server</div></pre></td></tr></table></figure>
-<p>More info: <a href="https://hexo.io/docs/server.html" target="_blank" rel="external">Server</a></p>
-<h3 id="Generate-static-files"><a href="#Generate-static-files" class="headerlink" title="Generate static files"></a>Generate static files</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">$ hexo generate</div></pre></td></tr></table></figure>
-<p>More info: <a href="https://hexo.io/docs/generating.html" target="_blank" rel="external">Generating</a></p>
-<h3 id="Deploy-to-remote-sites"><a href="#Deploy-to-remote-sites" class="headerlink" title="Deploy to remote sites"></a>Deploy to remote sites</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">$ hexo deploy</div></pre></td></tr></table></figure>
-<p>More info: <a href="https://hexo.io/docs/deployment.html" target="_blank" rel="external">Deployment</a></p>
-
-        </div>
-    
-
-</div>
-            
         </section>
+
     </div>
 </div>
-
-
-
-
-
 
 </div>
 
