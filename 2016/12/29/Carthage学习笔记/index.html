@@ -14,7 +14,7 @@
 <meta property="og:url" content="http://www.zhudibaby.com/2016/12/29/Carthage学习笔记/index.html">
 <meta property="og:site_name" content="Ada の Blog">
 <meta property="og:description" content="一、introduce　Carthage也是一个比较好用的三方框架管理工具,原理是自动帮你把工程编译为Dynamic framework(动态库),仅支持iOS8以上。">
-<meta property="og:updated_time" content="2016-12-29T07:32:46.000Z">
+<meta property="og:updated_time" content="2016-12-29T08:06:11.000Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="Carthage学习笔记(一)">
 <meta name="twitter:description" content="一、introduce　Carthage也是一个比较好用的三方框架管理工具,原理是自动帮你把工程编译为Dynamic framework(动态库),仅支持iOS8以上。">
@@ -22,7 +22,7 @@
     <link rel="alternative" href="/atom.xml" title="Ada の Blog" type="application/atom+xml">
   
   
-    <link rel="icon" href="/favicon.png">
+    <link rel="icon" href="img/favicon.png">
   
   <link rel="stylesheet" href="/main.css?v=4.0.0.css">
   
@@ -39,7 +39,7 @@
 <div class="intrude-less">
 	<header id="header" class="inner">
 		<a href="/" class="profilepic">
-			<img src="/Users/cjzeren/AdaBlog/blog/themes/yilia/source/img/avatar.png" class="js-avatar">
+			<img src="img/avatar.png" class="js-avatar">
 		</a>
 		<hgroup>
 		  <h1 class="header-author"><a href="/">Ada_Zhu</a></h1>
@@ -96,7 +96,7 @@
 	<div class="intrude-less">
 		<header id="header" class="inner">
 			<div class="profilepic">
-				<img src="/Users/cjzeren/AdaBlog/blog/themes/yilia/source/img/avatar.png" class="js-avatar">
+				<img src="img/avatar.png" class="js-avatar">
 			</div>
 			<hgroup>
 			  <h1 class="header-author js-header-author">Ada_Zhu</h1>
@@ -175,17 +175,6 @@
 </ol>
 <p><strong>注：在Carthage update的时候要翻墙，不然可能失败（RPC failed; curl 56 SSLRead() return error -9806），翻墙之后多试几次，也可以尝试其他解决办法。</strong></p>
 <h2 id="四、add-framework"><a href="#四、add-framework" class="headerlink" title="四、add framework"></a>四、add framework</h2><p>在项目Target中的build Setting的framework search path中添加AFNetworking.framework的路径：$(SRCROOT)/Carthage/Build/iOS</p>
-<h2 id="二、install-1"><a href="#二、install-1" class="headerlink" title="二、install"></a>二、install</h2><h6 id="HomeBrew安装法-1"><a href="#HomeBrew安装法-1" class="headerlink" title="HomeBrew安装法"></a>HomeBrew安装法</h6><ol>
-<li>$brew update （升级到最新版的brew）</li>
-<li>$brew install carthage （安装carthage）</li>
-</ol>
-<h2 id="三、use-1"><a href="#三、use-1" class="headerlink" title="三、use"></a>三、use</h2><ol>
-<li>在项目文件夹下创建一个cartfile的文件（项目名：CarthageDemo）</li>
-<li>在cartfile里添加需要使用的第三方库名，例如：github “AFNetworking/AFNetworking”(afnetworking的最新版本)，cartfile的其他限制</li>
-<li>cd 到CarthageDemo项目文件夹下 $ carthage update,成功后会生成Cartfile.resolved 和Carthage文件夹，cartfile 和cartfile.resolved需要提交到git，Carthage文件夹不需要提交，在ignore里添加Carthage/</li>
-</ol>
-<p><strong>注：在Carthage update的时候要翻墙，不然可能失败（RPC failed; curl 56 SSLRead() return error -9806），翻墙之后多试几次，也可以尝试其他解决办法。</strong></p>
-<h2 id="四、add-framework-1"><a href="#四、add-framework-1" class="headerlink" title="四、add framework"></a>四、add framework</h2><p>在项目Target中的build Setting的framework search path中添加AFNetworking.framework的路径：$(SRCROOT)/Carthage/Build/iOS</p>
 
       
 
@@ -203,13 +192,13 @@
                   <div class="reward-box">
                     
                     <div class="reward-box-item">
-                      <img class="reward-img" src="/alipay.png">
+                      <img class="reward-img" src="img/alipay.png">
                       <span class="reward-type">支付宝</span>
                     </div>
                     
                     
                     <div class="reward-box-item">
-                      <img class="reward-img" src="/Users/cjzeren/AdaBlog/blog/themes/yilia/source/img/weixin.png">
+                      <img class="reward-img" src="img/weixin.png">
                       <span class="reward-type">微信</span>
                     </div>
                     
